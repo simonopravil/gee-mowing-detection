@@ -1,14 +1,21 @@
+<h1 align="center">
+  <br>
+  <img src="assets/icon.png" width="300" alt="GMD Logo">
+  <br>
+  Grassland Mowing Detection (GMD)
+  <br>
+</h1>
+
 <p align="center">
-  <img src="assets/icon.png" width="900" alt="Grassland mowing detection illustration">
-</p>
-<p align="center">
-  <a href="https://github.com/simonopravil/gee-mowing-detection">
-    <img src="assets/icons/github.svg" width="28" height="28" alt="GitHub">
+
+  <a href="https://colab.research.google.com/drive/17legiv0ExrIMypzcVU4pjnhFNy2WHDOi#scrollTo=QDn6hX7pGqOy">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
   </a>
-  &nbsp;&nbsp;
+
   <a href="https://www.grass4b.com/_sub/">
-    <img src="assets/icons/web.svg" width="28" height="28" alt="Project website">
-  </a>
+  <img src="https://img.shields.io/badge/Grasslands4Biodiversity-Website-green" alt="Grasslands4Biodiversity">
+</a>
+
 </p>
 
 # Grassland Mowing Detection (GEE Prediction Pipeline)
