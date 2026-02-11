@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+outputs/
+results/
+*.joblib
+*.pkl
+
+# Model files (large)
+models/
+*.h5
+*.hdf5
+
+# Data files (user should provide their own)
+data/train/*.gpkg
+data/train/S1/
+data/train/S2/
+data/train/COH/
+data/test/*.gpkg
+data/test/SK_poly/
+data/test/CH_poly/
+
+# Google Earth Engine
+.config/earthengine/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Claude Code settings (local)
+.claude/

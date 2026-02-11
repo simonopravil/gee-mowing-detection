@@ -1,0 +1,31 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="grassland-mowing-detection",
+    version="1.0.0",
+    description="Grassland mowing event detection using satellite time-series data",
+    author="Simon Opravil",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    python_requires=">=3.8",
+    install_requires=[
+        "numpy>=1.21.0",
+        "pandas>=1.3.0",
+        "geopandas>=0.10.0",
+        "scipy>=1.7.0",
+        "scikit-learn>=1.0.0",
+        "optuna>=3.0.0",
+        "matplotlib>=3.4.0",
+        "seaborn>=0.11.0",
+        "joblib>=1.1.0",
+        "tqdm>=4.62.0",
+        "earthengine-api>=0.1.300",
+        "geemap>=0.10.0",
+    ],
+    extras_require={
+        "dev": [
+            "jupyter>=1.0.0",
+            "jupyterlab>=3.0.0",
+        ],
+    },
+)
