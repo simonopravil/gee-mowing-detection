@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="assets/icon.png" width="900" alt="Grassland mowing detection illustration">
+</p>
+<p align="center">
+  <a href="https://github.com/simonopravil/gee-mowing-detection">
+    <img src="assets/icons/github.svg" width="28" height="28" alt="GitHub">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.grass4b.com/_sub/">
+    <img src="assets/icons/web.svg" width="28" height="28" alt="Project website">
+  </a>
+</p>
+
 # Grassland Mowing Detection (GEE Prediction Pipeline)
 
 This repository runs a Google Earth Engine (GEE) batch prediction pipeline to detect grassland mowing events from Sentinel-2 time series. The notebook `notebooks/prediction/gee_prediction.ipynb` is the entry point: it defines a geometry, creates tiles, runs SatSelect to build features, predicts with a pre-trained Random Forest model stored in Earth Engine assets, and exports results to Google Drive.
@@ -10,6 +23,7 @@ This repository runs a Google Earth Engine (GEE) batch prediction pipeline to de
 - SatSelect vendored in this repo (see below)
 
 ## Setup
+
 
 ```bash
 # from the repo root
