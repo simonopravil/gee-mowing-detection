@@ -26,28 +26,7 @@ This repository runs a Google Earth Engine (GEE) batch prediction pipeline to de
 
 - Python 3.9+ with Jupyter
 - A Google Earth Engine account
-- Access to the EE assets referenced in the notebook
-- SatSelect vendored in this repo (see below)
 
-## Setup
-
-
-```bash
-# from the repo root
-pip install -r requirements.txt
-pip install -e .
-```
-
-SatSelect is vendored under `vendor/SatSelect` in this repo (because the upstream repo does not ship a pip package). No extra install step is required.
-
-Authenticate Earth Engine once on your machine:
-
-```bash
-python - <<'PY'
-import ee
-ee.Authenticate()
-PY
-```
 
 ## Run the prediction notebook
 
@@ -68,7 +47,6 @@ The notebook will:
 1) Define geometry and mask
 2) Create tiles and filter them by geometry
 3) For each tile and year:
-   - run SatSelect
    - create features
    - predict with the pre-trained model stored in EE assets
    - export results to Google Drive
@@ -92,15 +70,6 @@ Exports are started as Earth Engine tasks and will appear in your Drive after co
 └── setup.py
 ```
 
-## Project website
-
-[grass4b.com](https://www.grass4b.com/_sub/)
-
-## Notes
-
-- The model is loaded from an Earth Engine asset. If you do not have access to the asset referenced in the notebook, you must update the asset ID.
-- Prediction exports can be large. Make sure your EE quotas and Drive storage can handle the output.
-- If you want to update SatSelect, pull a specific commit in `vendor/SatSelect`.
 
 ## License
 
